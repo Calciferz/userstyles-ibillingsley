@@ -74,4 +74,10 @@
   .ytd-page-manager[theater]:not([fullscreen]) .ytp-chrome-top-buttons {
     margin-top: 50px; /* masthead is 56px, buttons have 6px padding */
   }
+
+  /* Top bar background */
+  #masthead #background {
+    /* Smooth out weird transparency jump when scrolled to top */
+    transition: opacity 0.7s ease-out;
+  }
 }
