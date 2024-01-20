@@ -49,4 +49,9 @@
     /* Fix miscalculated height for animation */
     transform: translateY(-61px); /* masthead is 56px, extra 5px */
   }
+
+  /* Move info button in top-right corner below the top bar in theater mode */
+  .ytd-page-manager[theater]:not([fullscreen]) .ytp-chrome-top-buttons {
+    margin-top: 50px; /* masthead is 56px, buttons have 6px padding */
+  }
 }
