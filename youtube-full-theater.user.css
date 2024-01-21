@@ -28,12 +28,14 @@
     /* Hide top bar */
     opacity: 0;
     /* Fade in-out */
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.5s ease-out;
   }
   /* Show top bar on hover and when search is focused */
   #masthead[theater]:not([fullscreen]):focus-within,
   #masthead[theater]:not([fullscreen]):hover {
     opacity: 1;
+    /* Fade in faster */
+    transition-duration: 0.1s;
   }
 
   /* Replace player top margin with #masthead-container */
